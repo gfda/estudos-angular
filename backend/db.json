@@ -2,28 +2,33 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
+      "name": "Pilsen",
+      "year": 1900,
+      "description": "alala"
     },
     {
       "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000
+      "name": "Lager",
+      "year": 1900,
+      "description": "alala"
     },
     {
       "id": 3,
-      "name": "Samsung S20+ Ultra",
-      "price": "7520.89"
+      "name": "Munich",
+      "year": 1900,
+      "description": "alala"
     },
     {
       "id": 4,
-      "name": "Lapis Preto Básico",
-      "price": "1.50"
+      "name": "IPA",
+      "year": 1900,
+      "description": "alala"
     },
     {
-      "name": "Monitor IPS",
-      "price": "749.90",
-      "id": 5
+      "id": 5,
+      "name": "Weiss",
+      "year": 1900,
+      "description": "alala"
     }
   ]
 }
