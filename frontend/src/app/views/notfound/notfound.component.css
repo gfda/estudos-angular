@@ -1,0 +1,8 @@
+.notfound {
+    max-width: 50vw;
+    max-height: 75vh;
+}
+
+.notfound a {
+    text-decoration: none;
+}
