@@ -21,6 +21,7 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
 
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { NotfoundComponent } from './views/notfound/notfound.component';
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule    
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
