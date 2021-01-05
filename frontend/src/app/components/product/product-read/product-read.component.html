@@ -1,1 +1,5 @@
-<p>product-read works!</p>
+<ul class="list-products">
+    <li *ngFor="let product of products">
+        {{product.name}} - {{product.year}}
+    </li>
+</ul>
