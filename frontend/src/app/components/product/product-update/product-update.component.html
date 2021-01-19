@@ -1,1 +1,23 @@
-<p>product-update works!</p>
+<mat-card>
+    <mat-card-title>Update Beer</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Name" 
+                [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Year (AAAA)"
+                [(ngModel)]="product.year" name="year">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Description"
+                [(ngModel)]="product.description" name="description"> 
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="updateProduct()" color="primary">
+    Save
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancel
+</button>
