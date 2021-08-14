@@ -10,7 +10,9 @@ import { Product } from '../product.model';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
-
+  
+  private readonly ADD_SUCCESS_MSG = "Beer added with success!"
+  
   product: Product = {
     name: '',
     year: 1800,
@@ -24,7 +26,7 @@ export class ProductCreateComponent implements OnInit {
   
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Beer added with success!')
+      this.productService.showMessage(this.ADD_SUCCESS_MSG)
       this.router.navigate(['/products'])
     })
   }

@@ -11,6 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductDeleteComponent implements OnInit {
 
+  private readonly DELETE_SUCCESS_MSG = "Beer deleted with success!"
+
   product: Product
 
   constructor(
@@ -28,7 +30,7 @@ export class ProductDeleteComponent implements OnInit {
 
   deleteProduct(): void {
     this.productService.delete(this.product.id).subscribe(() => {
-      this.productService.showMessage('Beer deleted with success!')
+      this.productService.showMessage(this.DELETE_SUCCESS_MSG)
       this.router.navigate(['/products'])
     })
   }

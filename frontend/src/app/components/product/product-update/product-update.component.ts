@@ -9,6 +9,8 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-update.component.css']
 })
 export class ProductUpdateComponent implements OnInit {
+  
+  private readonly UPDATE_SUCCESS_MSG = "Beer upated with success!"
 
   product: Product
 
@@ -26,7 +28,7 @@ export class ProductUpdateComponent implements OnInit {
 
   updateProduct(): void {
     this.productService.update(this.product).subscribe(() => {
-      this.productService.showMessage('Beer upated with success!')
+      this.productService.showMessage(this.UPDATE_SUCCESS_MSG)
       this.router.navigate(['/products'])
     })
   }
