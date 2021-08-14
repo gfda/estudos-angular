@@ -13,11 +13,7 @@ export class ProductCreateComponent implements OnInit {
   
   private readonly ADD_SUCCESS_MSG = "Beer added with success!"
   
-  product: Product = {
-    name: '',
-    year: 1800,
-    description: ''
-  }
+  public product: Product | undefined
 
   constructor(private productService: ProductService, private router: Router) { }
 

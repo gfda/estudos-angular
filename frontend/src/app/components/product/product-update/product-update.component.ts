@@ -12,7 +12,7 @@ export class ProductUpdateComponent implements OnInit {
   
   private readonly UPDATE_SUCCESS_MSG = "Beer upated with success!"
 
-  product: Product
+  public product: Product | undefined
 
   constructor(
     private productService: ProductService,
