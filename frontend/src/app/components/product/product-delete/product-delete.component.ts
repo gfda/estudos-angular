@@ -13,7 +13,7 @@ export class ProductDeleteComponent implements OnInit {
 
   private readonly DELETE_SUCCESS_MSG = "Beer deleted with success!"
 
-  public product: Product | undefined
+  public product: Product
 
   constructor(
     private productService: ProductService,
