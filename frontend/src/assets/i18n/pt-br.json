@@ -2,5 +2,8 @@
     "HOME": {
         "WELCOME": "Bem Vinds",
         "MESSAGE": "Um sistema embriagado para explicar o processo de registro em Angular"
+    },
+    "NOTFOUND": {
+        "MESSAGE": "404 - Cerveja não encontrada!"
     }
 }
