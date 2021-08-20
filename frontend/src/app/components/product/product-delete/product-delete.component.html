@@ -1,5 +1,5 @@
 <mat-card>
-    <mat-card-title>Delete Beer</mat-card-title>
+    <mat-card-title>{{ 'TITLE.DELETE' | translate }}</mat-card-title>
     <form>
         <mat-form-field>
             <input matInput placeholder="Name" 
@@ -16,8 +16,8 @@
     </form>
 </mat-card>
 <button mat-raised-button (click)="deleteProduct()" color="warn">
-    Delete
+    {{ 'BUTTON.DELETE' | translate }}
 </button>
 <button mat-raised-button (click)="cancel()">
-    Cancel
+    {{ 'BUTTON.CANCEL' | translate }}
 </button>
