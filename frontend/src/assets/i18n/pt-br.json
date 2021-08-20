@@ -1,9 +1,27 @@
 {
     "HOME": {
-        "WELCOME": "Bem Vinds",
+        "WELCOME": "Bem Vinde",
         "MESSAGE": "Um sistema embriagado para explicar o processo de registro em Angular"
     },
     "NOTFOUND": {
         "MESSAGE": "404 - Cerveja não encontrada!"
+    },
+    "PRODUCT-CRUD": {
+        "ADD": "Adicionar Cerveja"
+    },
+    "NAV": {
+        "HOME": "Home",
+        "BEERS": "Cervejas"
+    },
+    "BUTTON": {
+        "CANCEL": "Cancelar",
+        "DELETE": "Deletar",
+        "SAVE": "Salvar",
+        "UPDATE": "Atualizar"
+    },
+    "TITLE": {
+        "CREATE": "Adicionar Cerveja",
+        "DELETE": "Deletar Cerveja",
+        "UPDATE": "Atualizar Cerveja"
     }
 }

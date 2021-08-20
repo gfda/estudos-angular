@@ -5,5 +5,23 @@
     },
     "NOTFOUND": {
         "MESSAGE": "404 - Beer Not Found!"
+    },
+    "PRODUCT-CRUD": {
+        "ADD": "Add Beer"
+    },
+    "NAV": {
+        "HOME": "Home",
+        "BEERS": "Beers"
+    },
+    "BUTTON": {
+        "CANCEL": "Cancel",
+        "DELETE": "Delete",
+        "SAVE": "Save",
+        "UPDATE": "Update"
+    },
+    "TITLE": {
+        "CREATE": "New Beer",
+        "DELETE": "Delete Beer",
+        "UPDATE": "Update Beer"
     }
 }
