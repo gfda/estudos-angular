@@ -30,12 +30,8 @@ const routes: Routes = [
     component: ProductDeleteComponent
   },
   {
-    path: "404",
-    component: NotfoundComponent
-  },
-  {
     path: '**',
-    redirectTo: '/404'
+    component: NotfoundComponent
   }
 ];
 
