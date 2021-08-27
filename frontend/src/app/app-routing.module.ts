@@ -13,6 +13,11 @@ const routes: Routes = [
     path: "",
     component: HomeComponent
   },
+  { 
+    path: '/home',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
   {
     path: "products",
     component: ProductCrudComponent
