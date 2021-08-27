@@ -10,13 +10,13 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
 
 const routes: Routes = [
   {
-    path: "",
+    path: "home",
     component: HomeComponent
   },
   { 
-    path: '/home',
-    redirectTo: '',
-    pathMatch: 'full'
+    path: "",
+    redirectTo: "/home",
+    pathMatch: "full"
   },
   {
     path: "products",
