@@ -7,6 +7,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { NotfoundComponent } from './views/notfound/notfound.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { RoutesConstants } from './common/routes-constants';
 
 const routes: Routes = [
   {
@@ -15,23 +16,23 @@ const routes: Routes = [
   },
   { 
     path: "",
-    redirectTo: "/home",
+    redirectTo: RoutesConstants.HOME_URL,
     pathMatch: "full"
   },
   {
-    path: "products",
+    path: RoutesConstants.PRODUCTS_URL,
     component: ProductCrudComponent
   },
   {
-    path: "products/create",
+    path: RoutesConstants.PRODUCTS_CREATE_URL,
     component: ProductCreateComponent
   },
   {
-    path: "products/update/:id",
+    path: RoutesConstants.PRODUCTS_UPDATE_URL,
     component: ProductUpdateComponent
   },
   {
-    path: "products/delete/:id",
+    path: RoutesConstants.PRODUCTS_DELETE_URL,
     component: ProductDeleteComponent
   },
   {
