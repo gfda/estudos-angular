@@ -5,6 +5,7 @@ import { Product } from './product.model';
 import { EMPTY, Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { GlobalConstants } from 'src/app/common/global-constants';
+import { RoutesConstants } from 'src/app/common/routes-constants';
 
 @Injectable({
   providedIn: 'root'
@@ -22,21 +23,21 @@ export class ProductService {
   }
 
   create(product: Product): Observable<Product> {
-    return this.http.post<Product>(GlobalConstants.BASE_URL, product).pipe(
+    return this.http.post<Product>(RoutesConstants.BACKEND_PRODUCTS_URL, product).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
   }
   
   read(): Observable<Product[]> {
-    return this.http.get<Product[]>(GlobalConstants.BASE_URL).pipe(
+    return this.http.get<Product[]>(RoutesConstants.BACKEND_PRODUCTS_URL).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );
   }
 
   readById(id: number): Observable<Product> {
-    const url = `${GlobalConstants.BASE_URL}/${id}`
+    const url = `${RoutesConstants.BACKEND_PRODUCTS_URL}/${id}`
     return this.http.get<Product>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
@@ -44,7 +45,7 @@ export class ProductService {
   }
   
   update(product: Product): Observable<Product> {
-    const url = `${GlobalConstants.BASE_URL}/${product.id}`
+    const url = `${RoutesConstants.BACKEND_PRODUCTS_URL}/${product.id}`
     return this.http.put<Product>(url, product).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
@@ -52,7 +53,7 @@ export class ProductService {
   }
   
   delete(id: number): Observable<Product> {
-    const url = `${GlobalConstants.BASE_URL}/${id}`
+    const url = `${RoutesConstants.BACKEND_PRODUCTS_URL}/${id}`
     return this.http.delete<Product>(url).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
