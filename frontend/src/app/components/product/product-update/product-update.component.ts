@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { GlobalConstants } from 'src/app/common/global-constants';
+import { RoutesConstants } from 'src/app/common/routes-constants';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 
@@ -9,8 +11,6 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-update.component.css']
 })
 export class ProductUpdateComponent implements OnInit {
-  
-  private readonly UPDATE_SUCCESS_MSG = "Beer upated with success!"
 
   public product: Product
 
@@ -28,12 +28,12 @@ export class ProductUpdateComponent implements OnInit {
 
   updateProduct(): void {
     this.productService.update(this.product).subscribe(() => {
-      this.productService.showMessage(this.UPDATE_SUCCESS_MSG)
-      this.router.navigate(['/products'])
+      this.productService.showMessage(GlobalConstants.UPDATE_SUCCESS_MSG)
+      this.router.navigate([RoutesConstants.PRODUCTS_URL])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate([RoutesConstants.PRODUCTS_URL])
   }
 }

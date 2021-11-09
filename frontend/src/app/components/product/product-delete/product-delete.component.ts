@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { GlobalConstants } from 'src/app/common/global-constants';
+import { RoutesConstants } from 'src/app/common/routes-constants';
 
 
 @Component({
@@ -10,8 +12,6 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./product-delete.component.css']
 })
 export class ProductDeleteComponent implements OnInit {
-
-  private readonly DELETE_SUCCESS_MSG = "Beer deleted with success!"
 
   public product: Product
 
@@ -30,12 +30,12 @@ export class ProductDeleteComponent implements OnInit {
 
   deleteProduct(): void {
     this.productService.delete(this.product.id).subscribe(() => {
-      this.productService.showMessage(this.DELETE_SUCCESS_MSG)
-      this.router.navigate(['/products'])
+      this.productService.showMessage(GlobalConstants.DELETE_SUCCESS_MSG)
+      this.router.navigate([RoutesConstants.PRODUCTS_URL])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate([RoutesConstants.PRODUCTS_URL])
   }
 }
