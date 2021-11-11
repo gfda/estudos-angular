@@ -2,15 +2,15 @@
     <mat-card-title>{{ 'TITLE.DELETE' | translate }}</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Name" 
+            <input matInput placeholder="{{ 'NAME' | translate }}" 
                 [value]="product.name" name="name" disabled>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Year (AAAA)"
+            <input matInput placeholder="{{ 'YEAR' | translate }}"
                 [value]="product.year" name="year" disabled>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Description"
+            <input matInput placeholder="{{ 'DESCRIPTION' | translate }}"
                 [value]="product.description" name="description" disabled> 
         </mat-form-field>
     </form>

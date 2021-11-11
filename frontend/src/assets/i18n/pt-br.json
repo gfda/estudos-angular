@@ -23,5 +23,8 @@
         "CREATE": "Adicionar Cerveja",
         "DELETE": "Deletar Cerveja",
         "UPDATE": "Atualizar Cerveja"
-    }
+    },
+    "NAME": "Nome",
+    "YEAR": "Ano",
+    "DESCRIPTION": "Descrição"
 }

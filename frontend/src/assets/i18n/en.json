@@ -23,5 +23,8 @@
         "CREATE": "New Beer",
         "DELETE": "Delete Beer",
         "UPDATE": "Update Beer"
-    }
+    },
+    "NAME": "Name",
+    "YEAR": "Year",
+    "DESCRIPTION": "Description"
 }
